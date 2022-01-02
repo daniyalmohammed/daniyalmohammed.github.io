@@ -92,6 +92,16 @@ background: linear-gradient(270deg, rgba(0,26,69,1) 0%, rgba(69,0,25,1) 100%);
     font-size: calc(100%*1.5);
     clear: right;
 }
+.section-header4{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0%;
+    background-color: rgb(0, 153, 153);
+    font-size: calc(100%*1.5);
+    clear: right;
+    padding: 0%;
+    margin: 0%;
+}
     .section-header2{
         text-align: center;
         color: rgb(255, 255, 255);
@@ -107,6 +117,14 @@ background: linear-gradient(270deg, rgba(0,26,69,1) 0%, rgba(69,0,25,1) 100%);
         background-color: rgb(200, 100, 50);
         font-size: calc(100%*1.5);
         clear: right;
+    }
+
+    .section-header5{
+        padding: 0%;
+        text-align: center;
+        color: black;
+        margin: 0%;
+        font-size: calc(100%*2);
     }
 .about-image1{
    float: left;
@@ -127,6 +145,18 @@ background: linear-gradient(270deg, rgba(0,26,69,1) 0%, rgba(69,0,25,1) 100%);
      margin: 15px;
      border-radius: 8px;
  }
+
+ .about-image4{
+    text-align: center;
+     height: 400px;
+     margin: 15px;
+     border-radius: 40px;
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+
  .about-image1:hover {
     transition: filter 0.5s;
     filter:saturate(300%)
