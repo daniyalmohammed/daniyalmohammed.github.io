@@ -277,5 +277,7 @@ background: linear-gradient(270deg, rgba(0,26,69,1) 0%, rgba(69,0,25,1) 100%);
     display: inline-block;
     justify-content: center;
  }
-
+ .banner{
+    text-align:center;
+    }
 
