@@ -1,4 +1,4 @@
-# daniyalmohammed.github.io
+# Daniyal's Personal Website
 
 The website is used to showcase and display my side projects as well as provide privacy policies and other documents for the projects I create.
 
