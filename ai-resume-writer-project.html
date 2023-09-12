@@ -25,13 +25,148 @@
         <section class="blog-text">
             <b>Note: Please scroll to the bottom for the app's Privacy Policy and Terms of Service and contact info for support.</b>
             <br>
-            <br>
 
             <!DOCTYPE html>
 <html>
 <head></head>
 
-<h2 class="section-header4">AI Resume Writer Terms of Service</h2>
+<h1 align="center" style="font-size: 30px;">Download AI Resume Writer</h1>
+<p align="center">
+    <a href="https://apps.apple.com/ca/app/ai-resume-writer/id6463698204">
+        <img src="images/get-apple-store.jpg" alt="Available on the App Store" width="200">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.wloo.airesume">
+        <img src="images/get-play-store.jpg" alt="Available on Google Play" width="200">
+    </a>
+</p>
+
+<br>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Centered and Scrollable Images</title>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: flex-start; /* Start-align images horizontally */
+            overflow-x: auto; /* Enable horizontal scrolling */
+            white-space: nowrap; /* Prevent images from wrapping to the next line */
+            border: 1px solid #ccc; /* Add a border for visibility */
+            border-radius: 10px; /* Apply rounded corners to the container */
+            padding: 10px; /* Add some padding around the container */
+            scroll-snap-type: x mandatory; /* Enable snap-scrolling */
+            scroll-snap-align: start; /* Snap to the start of each image */
+        }
+
+        .image {
+            flex: 0 0 auto;
+            margin: 0 10px; /* Add some space around each image */
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px; /* Apply rounded corners to the images */
+            scroll-snap-stop: always; /* Control snap behavior */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container" style="scroll-left: 0;">
+        <img class="image" src="images/appImage1.png" alt="Image 1" width="200">
+        <img class="image" src="images/appImage2.png" alt="Image 2" width="200">
+        <img class="image" src="images/appImage3.png" alt="Image 3" width="200">
+        <img class="image" src="images/appImage4.png" alt="Image 4" width="200">
+        <img class="image" src="images/appImage5.png" alt="Image 5" width="200">
+    </div>
+</body>
+</html>
+
+<br>
+<br>
+
+<h2 class="section-header4">AI Resume Writer Description</h2>
+<br>
+AI Resume Writer - the ultimate tool for crafting impressive resumes effortlessly. Say goodbye to hours of formatting and editing – with AI Resume Writer, you can create a polished and professional resume in a few minutes. Just answer 5 straightforward questions about your education, experience, and achievements, and watch as the magic unfolds.
+<br>
+<br>
+
+<h2 class="section-header4">AI Resume Writer Features</h2>
+<br>
+            <b>🌟 Quick and Beautiful:</b></br>
+            With over 15+ gorgeous recruiter-screened templates, ensure your resume stands out
+<br>
+            <br>
+
+            <b>🤖 GPT-3.5 Powered:</b></br>
+            Leverage the capabilities of the latest AI technology to create a memorable application
+<br>
+            <br>
+
+            <b>📝 Personalized Edit Feature:</b></br>
+            Easily edit your resume and browse other templates
+<br>
+            <br>
+
+            <b>📄 Professional PDFs:</b></br>
+            Receive your resume as a polished PDF, ready for printing or digital sharing
+<br>
+            <br>
+
+            <b>🔄 Export Options:</b></br>
+            Seamlessly export your resume for easy sharing and collaboration
+
+            <br>
+            <br>
+
+<h2 class="section-header4">The AI Resume Writer Story</h2>
+
+<p>After I complete any project I’m proud of, I have a habit of chronicling the story of its creation and the journey it took to bring it there. The story for today is AI Resume Writer project. In the space of two weeks, my team and I created a deployed, monetizable app on both the App Store and the Play Store which I believe is truly the quickest and cleanest method to create a resume.</p>
+
+<p>The true start to the story starts long before the project's actual start. At the start of Summer 2023, I knew I wanted to create something impactful with a team. My prior internship at Cognixion (neurotech start-up), taught me exactly how to work effectively within a software team so I had a good understanding of exactly what processes we needed to work in a larger team. Using branches, pull requests, JIRA, estimating story points, grooming sessions are all practices I grew fond of and was excited to implement in my own team. I also knew I wanted to build something genuinely impactful. The metrics I discussed with Ishan that would define our success was not just to create a cool technical project, but something that has users and generates revenue.</p>
+
+<p>That would be our measure of success. With this mindset in mind, I approached Ishan and we got started on coming up with ideas. We discussed countless ideas, some ranged from outrageously ambitious and others were just boring. Eventually we discussed the success of the app created by our mutual friend’s previous manager. Reportedly, the app was generating 10k each month in profit and it was just a simple Resume Generator app. We then wondered how can we make it better? I brought up how easy the GPT API was to use. What if we fed user input to GPT and let GPT create a polished perfect resume? GPT was relatively new so not many apps were created to try something like this.</p>
+
+<p>We then got started on discussing technical requirements, what would we get back from GPT? How would we actually generate the resume? Should we develop on XCode or Flutter? Then we got started on how the user should actually answer these questions? Should they be able to edit the resume afterwards? How would we make the user flow clean?</p>
+
+<p>We liked the idea and thought it was interesting, but the idea was simply a side project once again. Sure, maybe this time we can get users and make some money but realistically how would we pitch this to a VC (we’re YC Combinator fanatics). So we said let’s come up with more ideas and come back in a week to discuss a better idea and finalize it. I ended up asking my co-op manager what he thought and whether we should pursue it despite the fact that maybe the idea can’t exactly launch a company. He brought up that the learning would be an amazing practice for the real thing. That advice switched my mindset completely. Why don’t I use this as a practice to see if I can make impact on the real world. Learning how to effectively work with others, how to lead a project, how to be responsible and take ownership of your product and be responsible for both its successes and failures. I ended up expressing this to Ishan and he fully agreed. We decided to get started.</p>
+
+<p>The first thing we did was create a JIRA board and get started on planning how to get started. We decided that we should create the prototype and bring others on as the codebase becomes bigger. So on August 20th, we had our initial planning session and here was our timeline of when to get each feature in by:</p>
+
+<h4>PRODUCT PLAN:</h4>
+
+<p><strong>MVP V0.1 (EOD August 21st):</strong><br> Ask one question (in text box) → 1 query sent to chatGPT → get reply from GPT</p>
+
+<p><strong>MVP V0.5 (EOD August 23rd):</strong><br> Ask one question (letting user input everything GPT needs to know) → 1 query sent to chatGPT → displays on a 1 single template (it's okay if ugly) → can export as 1 page pdf</p>
+
+<p><strong>MVP V1 (EOD August 25th):</strong><br> 10 questions to user → 1 query sent to chatGPT → displays on a 1 single template → can export as pdf/send to printer (and looks decently good)</p>
+
+<p><strong>MVP V1.5 (EOD August 27 launch):</strong><br> 10 questions to user → 1 query sent to chatGPT → displays on a 1 single template → can export as pdf (throttle control/self-sustaining)</p>
+
+<p><strong>MVP V2 (EOD September 2nd):</strong><br> 10 questions to user → 1 query sent to chatGPT → displays on multiple templates (in-app purchases) → can export as pdf OR docx</p>
+
+<p><strong>MVP V2.5 (plan for later):</strong><br> 10 questions to user OR putting in existing resume → 1 query sent to chatGPT → exports on multiple templates (in-app purchases) with color changing functionality → new page to edit app → can export as pdf OR docx</p>
+
+<p>NOTE: EOD means end of day</p>
+
+<p>We wanted to get this out before school and co-op started so we made these deadlines incredibly short. Each feature would have to be added in relatively quickly. I also got started on sharing the ideas with all my friends and inviting them to come on to the project. One other thing to note was that in hindsight, doing the product features on a timeline with many MVP iterations was an excellent decision because it kept us focused and on track. Despite the fact that at the end there were some pivots, we stuck to our original timeline and completed everything we needed and more by EOD September 3rd. Only a single day delay.</p>
+
+<p>After each of these MVP deadlines, we discussed how the past “sprint’ (even though they were a couple days) went and groomed out all the tasks to do for the next sprint/MVP. I also loved these meetings and the entire process because it integrated seamlessly.</p>
+
+<p>Despite these days being long, grueling and stressful, leading the project was incredibly rewarding and I learned quite a lot both technical and non-technical skills.</p>
+
+<p>Non-technically, I learned how to think from a product perspective rather than simply a technical perspective. Considering the user flow, trying to limit pain points and even marketing was completely new to me. We represented our intended audience for the app using a character we named Blake, who has experience working at McDonald's for a couple of years and now wants a cashier job that his friend recommended for him at Walmart.</p>
+
+<p>I asked a friend if she wanted to join in because she was interested in UX design and we figured she could help create wireframes and help us in understanding the flow. I also got two of my best friends to get started on marketing which was also an interesting problem. We decided that TikTok would be the best avenue both for helping us save money and because our target audience is likely also on the app.</p>
+
+<p>Eventually we brought on 12 others, ranging from my little sister in Grade 8, career devs, data scientists, business students etc. I ended up managing the majority of them and would help them onboard and set everything up and asked them what they were hoping to get out of the project. Learning these soft skills to help and motivate others was incredibly valuable and I got an opportunity to lead and mentor others throughout the entire project which I thoroughly enjoyed.</p>
+
+<p>In terms of technical work, I implemented the GPT API, did some prompt engineering and also ensured rate limiting worked. I also worked on creating the question flow page and UI in flutter and learned about page controllers and navigation contexts. I also used RevenueCat to implement in-app purchases which was a time-consuming challenge. Besides that, I reviewed every PR and had a hand in almost every single part of the app where I was involved in fixing bugs and giving implementation advice to others.</p>
+
+<h3>Conclusion and Next Steps</h3>
+
+<p>All in all, the two weeks was extremely stressful but also highly rewarding. I got an opportunity to lead a mini-startup, problem solve from a product perspective and be a technical mentor to others for the first time. The next steps are to market the app and see if we can generate revenue. As I’m writing this the app is on the Play Store and submitted for review on the App Store (we got rejected twice so far for silly mistakes). Once it’s out, phase 2 of marketing will begin and we can find out if AI Resume Writer ends up generating any money or users.</p>
+</body>
+            
+            <h2 class="section-header4">AI Resume Writer Terms of Service</h2>
     <p>
         Please review Apple's End-User License Agreement and Terms of Service for using the AI Resume Builder. Your use of the app is also governed by Apple's terms and policies. You can access Apple's EULA and ToS through the following links:
     </p>
@@ -112,102 +247,6 @@ Thank you for considering AI Resume Builder. We want to make it clear how we use
     </body>
     
 </html>
-
-<h2 class="section-header4">The AI Resume Writer Story</h2>
-<br>
-After I complete any project I’m proud of, I have a habit of chronicling the story of it’s creation and the journey it took to bring it there. The story for today is AI Resume Writer project. In the space of two weeks, my team and I created a deployed, monetizable app on both the App Store and the Play Store which I believe is truly the quickest and cleanest method to create a resume. 
-<br><br>
-The true start to the story starts long before the projects’ actual start. At the start of Summer 2023, I knew I wanted to create something impactful with a team. My prior internship at Cognixion (neurotech start-up), taught me exactly how to work effectively within a software team so I had a good understanding of exactly what processes we needed to work in a larger team. Using branches, pull requests, JIRA, estimating story points, grooming sessions are all practices I grew fond of and was excited to implement in my own team. I also knew I wanted to build something genuinely impactful. The metrics I discussed with Ishan that would define our success was not just to create a cool technical project, but something that has users and generates revenue. 
-<br><br>
-That would be our measure of success. With this mindset in mind, I approached Ishan and we got started on coming up with ideas. We discussed countless ideas, some ranged from outrageously ambitious and others were just boring. Eventually we discussed the success of the app created by our mutual friend’s previous manager. Reportedly, the app was generating 10k each month in profit and it was just a simple Resume Generator app. We then wondered how can we make it better? I brought up how easy the GPT API was to use. What if we fed user input to GPT and let GPT create a polished perfect resume? GPT was relatively new so not many apps were created to try something like this. 
-<br><br>
-We then got started on discussing technical requirements, what would we get back from GPT? How would we actually generate the resume? Should we develop on XCode or Flutter? Then we got started on how the user should actually answer these questions? Should they be able to edit the resume afterwards? How would we make the user flow clean?
-<br><br>
-We liked the idea and thought it was interesting, but the idea was simply a side project once again. Sure, maybe this time we can get users and make some money but realistically how would we pitch this to a VC (we’re YC Combinator fanatics). So we said let’s come up with more ideas and come back in a week to discuss a better idea and finalize it. I ended up asking my co-op manager what he thought and whether we should pursue it despite the fact that maybe the idea can’t exactly launch a company. He brought up that the learning would be an amazing practice for the real thing. That advice switched my mindset completely. Why don’t I use this as a practice to see if I can make impact on the real world. Learning how to effectively work with others, how to lead a project, how to be responsible and take ownership of your product and be responsible for both its successes and failures. I ended up expressing this to Ishan and he fully agreed. We decided to get started. 
-<br><br>
-The first thing we did was create a JIRA board and get started on planning how to get started. We decided that we should create the prototype and bring others on as the codebase becomes bigger. So on August 20th, we had our initial planning session and here was our timeline of when to get each feature in by:
-<br><br>
-PRODUCT PLAN:<br>
-MVP V0.1 (EOD August 21st): <br>
-Ask one question (in text box)  → 1 query sent to chatGPT → get reply from gpt
-<br><br>
-MVP V0.5 (EOD August 23rd):<br>
-Ask one question (letting user input everything gpt needs to know)  → 1 query sent to chatGPT → displays on a 1 single template (its okay if ugly) → can export as 1 page pdf<br>
-<br>
-MVP V1 (EOD August 25th):<br>
-10 questions to user → 1 query sent to chatGPT → displays on a 1 single template → can export as pdf/send to printer (and looks decently good)<br>
-<br>
-MVP V1.5 (EOD August 27 launch):<br>
-10 questions to user → 1 query sent to chatGPT → displays on a 1 single template → can export as pdf (throttle control/self-sustaining)<br>
-<br>
-MVP V2 (EOD September 2nd):<br>
-10 questions to user → 1 query sent to chatGPT → displays on a multiple templates (in-app purchases) → can export as pdf OR docx<br>
-<br>
-MVP V2.5 (plan for later):<br>
-10 questions to user OR putting in existing resume → 1 query sent to chatGPT → exports on a multiple templates (in-app purchases) with colour changing functionality → new page to edit app → can export as pdf OR docx<br>
-NOTE: EOD means end of day
-<br><br>
-We wanted to get this out before school and co-op started so we made these deadlines incredibly short. Each feature would have to be added in relatively quickly. I also got started on sharing the ideas with all my friends and inviting them to come on to the project. One other thing to note was that in hindsight, doing the product features on a timeline with many MVP iterations was an excellent decision because it kept us focused and on track. Despite the fact that at the end there were some pivots, we stuck to our original timeline and completed everything we needed and more by EOD September 3rd. Only a single day delay.
-<br><br>
-After each of these MVP deadlines, we discussed how the past “sprint’ (even though they were a couple days) went and groomed out all the tasks to do fo the next sprint/MVP. I also loved these meetings and the entire process because it integrated seamlessly.
-<br><br>
-Despite these days being long, grueling and stressful, leading the project was incredibly rewarding and I learned quite alot both technical and non-technical skills.
-<br><br>
-Non-technically, I learned how to think from a product perspective rather than simply a technical perspective. Considering the user flow, trying to limit pain points and even marketing was completely new to me. We represented our intended audience for the app using a character we named Blake, who has experience working at Mcdonalds for a couple years and now wants a cashier job that his friend recommended for him at Walmart. 
-<br><br>
-I asked a friend if she wanted to join in because she was interested in UX design and we figured she could help create wireframes and help us in understanding the flow. I also got two of my best friends to get started on marketing which was also an interesting problem. We decided that TikTok would be the best avenue both for helping us save money and because our target audience is likely also on the app.
-<br><br>
-Eventually we brought on 12 others, ranging from my little sister in Grade 8, career devs, data scientists, business students etc. I ended up managing the majority of them and would help them onboard and set everything up and asked them what they were hoping to get out of the project. Learning these soft skills to help and motivate others was incredibly valuable and I got an opportunity to lead and mentor others throughout the entire project which I thoroughly enjoyed.
-<br><br>
-In terms of technical work, I implemented the GPT API, did some prompt engineering and also ensured rate limiting worked. I also worked on creating the question flow page and UI in flutter and learned about page controllers and navigation contexts. I also used RevenueCat to implement in-app purchases which was a time consuming challenge. Besides that, I reviewed every PR and had a hand in almost every single part of the app where I was involved in fixing bugs and giving implementation advice to others.
-<br><br>
-All in all, the two weeks was extremely stressful but also highly rewarding. I got an opportunity to lead a mini-startup, problem solve from a product perspective and be a technical mentor to others for the first time. The next steps are to market the app and see if we can generate revenue. As I’m writing this the app is on the Play Store and submitted for review on the App Store (we got rejected twice so far for silly mistakes). Once it’s out, phase 2 of marketing will begin and we can find out if AI Resume Writer ends up generating any money or users. 
-
-
-<br>
-<br>
-
-            
-<h2 class="section-header4">AI Resume Writer features</h2>
-            <b>Quick and Easy:</b></br>
-            Spend more time preparing for interviews and less time on resume formatting.
-<br>
-            <br>
-
-            <b>GPT-3.5 Powered:</b></br>
-            Leverage the capabilities of the latest AI technology to stand out from the crowd.
-<br>
-            <br>
-
-            <b>Personalized Content:</b></br>
-            Get a resume that suits your unique skills and job aspirations.
-<br>
-            <br>
-
-            <b>Professional PDFs:</b></br>
-            Download your resume as a polished PDF, ready for printing or digital sharing.
-<br>
-            <br>
-
-            <b>Export Options:</b></br>
-            Seamlessly export your resume for easy sharing and collaboration.
-
-
-            <br>
-
-            <br>
-            <br>
-            <h2 class="section-header4">AI Resume Writer Technical Overview</h2>
-            <br>
-            • AI Resume Writer utilizes GPT-3.5 API to create an polished AI-generated resume
-            <br>
-            <br>
-            • AI Resume Writer utilizes PDF Generation to allow a user to export their resume as PDF or print functionality
-            <br>
-            <br>
-            • AI Resume Writer prioritizes data privacy, employing robust measures to protect user information.
-            <br>
-            <br>
         </section>
 
         
