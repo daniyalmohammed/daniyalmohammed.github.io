@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Coda&family=Urbanist:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family:'Lato';
+    font-family:'Lato', sans-serif;
     color:rgb(0, 0, 0);
     font-size: clamp(15px,2vw,20px);
 }
@@ -12,6 +10,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    background: none; /* Removed background color */
 }
 
 .nav ul {
@@ -47,12 +46,9 @@ html, body {
     padding: 2 1%;
 }
 
-html {
-    background:rgba(255, 255, 225, 0.5)
-}
 .main-header{
     background: rgb(0,26,69);
-background: linear-gradient(270deg, rgba(0,26,69,1) 0%, rgba(69,0,25,1) 100%);
+background: linear-gradient(270deg, rgb(20, 52, 76) 25%, rgb(13, 33, 65) 100%);
     background-blend-mode: multiply;
     background-size:cover;
     padding-bottom: 15px;
@@ -62,7 +58,6 @@ background: linear-gradient(270deg, rgba(0,26,69,1) 0%, rgba(69,0,25,1) 100%);
     text-align: center;
     margin: 1;
     font-size: 3.5em;
-    font-family: 'Coda', cursive;
     font-weight: bold;
     margin-bottom: 0cm;
     color: white;
@@ -88,7 +83,7 @@ background: linear-gradient(270deg, rgba(0,26,69,1) 0%, rgba(69,0,25,1) 100%);
     text-align: center;
     color: rgb(255, 255, 255);
     margin-bottom: 0%;
-    background-color: rgb(50, 200, 100);
+    background-color: rgb(39, 98, 134);
     font-size: calc(100%*1.5);
     clear: right;
 }
@@ -96,7 +91,7 @@ background: linear-gradient(270deg, rgba(0,26,69,1) 0%, rgba(69,0,25,1) 100%);
     text-align: center;
     color: rgb(255, 255, 255);
     margin-bottom: 0%;
-    background-color: rgb(0, 153, 153);
+    background-color: rgb(39, 98, 134);
     font-size: calc(100%*1.5);
     clear: right;
     padding: 0%;
@@ -107,14 +102,14 @@ background: linear-gradient(270deg, rgba(0,26,69,1) 0%, rgba(69,0,25,1) 100%);
         color: rgb(255, 255, 255);
         margin-bottom: 0%;
         clear: left;
-        background-color: rgb(100, 50, 200);
+        background-color: rgb(39, 98, 134);
         font-size: calc(100%*1.5);
     }
     .section-header3{
         text-align: center;
         color: rgb(255, 255, 255);
         margin-bottom: 0%;
-        background-color: rgb(200, 100, 50);
+        background-color: rgb(50, 200, 100);
         font-size: calc(100%*1.5);
         clear: right;
     }
@@ -162,7 +157,7 @@ background: linear-gradient(270deg, rgba(0,26,69,1) 0%, rgba(69,0,25,1) 100%);
     filter:saturate(300%)
  }
 .blog-section{
-    background-color: rgb(213, 214, 255);
+    background-color: rgba(213, 214, 255, 0.379);
     clear: left;
     padding-bottom: 0.7em;
 }
@@ -179,30 +174,34 @@ background: linear-gradient(270deg, rgba(0,26,69,1) 0%, rgba(69,0,25,1) 100%);
 }
 
 .read-more-container {
-    color: rgb(255, 255, 255);
-    background-color: #004d3c;
-    border: 2px solid rgb(0, 255, 191);
-    border-radius: .3em;
-    font-weight: bold;
-    font-size: 100%;
-    padding: 1mm;
-    padding-right: 5mm;
-    padding-left: 5mm;
-    text-decoration: clear;
+    color: white;
+    background-color:  #66a3ffc3; /* Lighter blue background */
+    border-radius: 6px; /* More subtle rounded corners */
+    font-weight: normal;
+    font-size: 70%; /* Slightly smaller font size */
+    padding: 0.2em 0.6em; /* Less padding for a smaller button */
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    position: relative; /* For hover effect */
+    overflow: hidden; /* Hides the outline on hover */
 }
-.read-more-container a{
+
+.read-more-container a {
     text-decoration: none;
     color: white;
 }
-.read-more-container:hover{
-    background-color: #00af7b;
-    transition: transform .2s;
-  transform: scale(1.2);
+
+.read-more-container:hover {
+    background-color: #4b93ff; /* Slightly darker blue on hover */
+    transform: scale(1.02); /* Less exaggerated hover effect */
 }
+
 
 .contact {
     background: rgb(255,100,100);
-    background: linear-gradient(270deg, rgba(255,100,100,1) 25%, rgba(100,100,255,1) 75%);
+    background: linear-gradient(270deg, rgb(177, 99, 255) 25%, rgb(120, 170, 255) 75%);
     display: flex;  
     justify-content: center;
 }
@@ -279,5 +278,4 @@ background: linear-gradient(270deg, rgba(0,26,69,1) 0%, rgba(69,0,25,1) 100%);
  }
  .banner{
     text-align:center;
-    }
-
+}
