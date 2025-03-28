@@ -62,20 +62,131 @@
     </a>
 </p>
 
-<h2 class="section-header4">Citations Used by Our AI Model</h2>
-<p>
-    Our AI model uses the following scientific literature to generate recommendations and advice for users. These citations form the knowledge base that helps our app provide relevant fitness suggestions:
-</p>
-<ol>
-    <li>Johnson, A.B., et al. (2023). "Fitness Motivation and Visualization Techniques." <em>Journal of Physical Fitness</em>, 43(2), 178-192.</li>
-    <li>Chen, L.Y., & Williams, R.T. (2022). "Lifestyle Applications for Fitness Tracking." <em>International Journal of Sports Science</em>, 15(3), 221-235.</li>
-    <li>Thompson, D.K., Roberts, S.J., & Anderson, M.P. (2023). "Using Technology to Enhance Fitness Journeys." <em>European Journal of Applied Physiology</em>, 124(1), 45-57.</li>
-    <li>Martinez, C., & Singh, A. (2021). "Visual Feedback in Fitness Applications." <em>Sports Technology</em>, 14(2), 112-126.</li>
-    <li>Wilson, J.H., et al. (2022). "Nutrition and Exercise: A Balanced Approach." <em>Journal of Nutrition and Lifestyle</em>, 19(4), 332-347.</li>
-    <li>Rodriguez-Fernandez, A., & Kim, H.J. (2023). "Modern Approaches to Body Composition Assessment." <em>Frontiers in Digital Health</em>, 5, 103.</li>
-    <li>Patel, S., O'Connor, B., & Wright, L.M. (2022). "Body Fat Distribution and Fitness Goals." <em>Fitness Research</em>, 31(2), 87-99.</li>
-    <li>Yamamoto, T., et al. (2023). "Technology in Fitness: Applications and Future Trends." <em>Sports Medicine and Technology</em>, 12(4), 267-280.</li>
-</ol>
+<h2 class="section-header4">Annotated Bibliography</h2>
+<p>Below is the research literature that informs BodyMax AI's algorithms and recommendations:</p>
+
+<h3>Category 1: Image-Based Body Composition Prediction</h3>
+
+<div class="citation">
+    <p><strong>Ferreira, T. J., Salvador, I. C., Pessanha, C. R., da Silva, R. R. M., Pereira, A. D., Horst, M. A., Carvalho, D. P., Koury, J. C., & Pierucci, A. P. T. R. (2025).</strong> Digital 2D-photo assessments accurately estimate body fat compared to DXA. <em>NPJ Digital Medicine, 8(1), 43.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> This recent study evaluated an artificial intelligence method using two-dimensional smartphone photographs to estimate body fat percentage, comparing it against dual-energy X-ray absorptiometry (DXA) as the clinical gold standard. In a cross-sectional sample of 1,273 adults, the AI-based photo estimates showed very high agreement with DXA (Lin's concordance ≥ 0.96) and outperformed other field methods like skinfolds and bioimpedance. The authors conclude that simple smartphone photos can be a practical and accurate alternative for body fat assessment, which is directly relevant to BodyMax AI's approach of using user images for body composition estimation.</p>
+</div>
+
+<div class="citation">
+    <p><strong>Majmudar, M. D., Chandra, S., Yakkala, K., Kennedy, S., Agrawal, A., Sippel, M., Ramu, P., Chaudhri, A., Smith, B., Criminisi, A., Heymsfield, S. B., & Stanford, F. C. (2022).</strong> Smartphone camera based assessment of adiposity: a validation study. <em>NPJ Digital Medicine, 5(1), 79.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> This study introduced and validated a "Visual Body Composition" (VBC) machine learning algorithm that uses conventional smartphone photos to predict body fat percentage. The researchers tested VBC on 134 adults with diverse body sizes and compared its body fat estimates to DXA and various consumer bioimpedance devices. VBC had the lowest error (≈2% body fat error) and best agreement with DXA, outperforming other consumer devices. The work demonstrates the feasibility of accurately predicting total body fat from a simple photo, supporting the technology underpinning BodyMax AI's image-based body composition model.</p>
+</div>
+
+<div class="citation">
+    <p><strong>Farina, G. L., Orlandi, C., Lukaski, H., & Nescolarde, L. (2022).</strong> Digital single-image smartphone assessment of total body fat and abdominal fat using machine learning. <em>Sensors, 22(21), 8365.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> Farina et al. developed a machine learning method to estimate whole-body fat mass and abdominal fat mass from a single lateral smartphone photograph. In their validation with adults in Italy, the photo-based fat mass predictions showed no significant difference from DXA measurements and were highly correlated with DXA (error ~1.3–3% of body fat). Notably, they achieved a proof-of-concept for estimating visceral fat (abdominal region) via image analysis. This paper is relevant to BodyMax AI as it confirms that a properly calibrated algorithm can use one ordinary photo to objectively quantify total and regional adiposity with high precision.</p>
+</div>
+
+<div class="citation">
+    <p><strong>Porterfield, F., Shapoval, V., Langlet, J., Samouda, H., & Stanford, F. C. (2024).</strong> Digital biometry as an obesity diagnosis tool: A review of current applications and future directions. <em>Life, 14(8), 947.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> This is a comprehensive open-access review of emerging technologies that assess body composition digitally, including smartphone imaging and 3D scanning. The authors describe various indirect methods for estimating adiposity and point out the limitations of BMI alone. Of particular interest is the section on a computer vision system called "Visual Body Composition (VBC)" that uses 2D photos to estimate body fat percentage. The review finds that digital image-based methods, when combined with machine learning, can discreetly and reliably measure body fat and visceral fat. These insights provide context for BodyMax AI's development, highlighting that leveraging computer vision for body fat prediction is an accepted and growing practice in obesity assessment.</p>
+</div>
+
+<div class="citation">
+    <p><strong>Chiu, C.-Y., Dunn, M., Heller, B., Churchill, S. M., & Maden-Wilkinson, T. (2022).</strong> Modification and refinement of three-dimensional reconstruction to estimate body volume from a simulated single-camera image. <em>Obesity Science & Practice, 9(2), 103–111.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> Chiu et al. present a method to reconstruct a 3D body shape from a single 2D image using a machine learning technique (STRAPS) and then estimate body volume and fat from that 3D model. Using a dataset of over 4,300 scans, they achieved body volume estimates within ~2% error for normal-weight individuals, though accuracy was slightly lower for obese individuals. Their refined single-camera 3D approach proved feasible for at-home body composition monitoring. For BodyMax AI, this work underscores that even one photo can yield a personalized 3D avatar from which body composition is derivable, reinforcing the app's strategy of using imaging to approximate volumes and fat mass in a user-friendly manner.</p>
+</div>
+
+<div class="citation">
+    <p><strong>Affuso, O., Pradhan, L., Zhang, C., Gao, S., Wiener, H. W., Gower, B., Heymsfield, S. B., & Allison, D. B. (2018).</strong> A method for measuring human body composition using digital images. <em>PLOS ONE, 13(11), e0206430.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> This foundational study developed an automated algorithm to estimate body fat percentage (%BF) from standard digital photographs. The authors used a diverse sample of 323 children and adults and "trained" the computer vision model against known body composition measurements. The photographic method produced %BF estimates that closely matched criterion methods, demonstrating "valid estimates of BF in both children and adults". Although imaging technology has advanced since 2018, this paper provided early evidence that simple photos can quantify adiposity with reasonable accuracy. It lends credibility to BodyMax AI's concept by showing that image-based body fat estimation is scientifically grounded and not just a recent novelty.</p>
+</div>
+
+<div class="citation">
+    <p><strong>Nascimento, N. M. N., de Sousa Junior, P. C., Nunes, P. Y. R., da Silva, S. P. P., Loureiro, L. L., Bittencourt, V. Z., Capistrano Junior, V. L. M., & Rebouças Filho, P. P. (2023).</strong> New advances in body composition assessment with ShapedNet: A single image deep regression approach. <em>Preprint posted to arXiv, 2310.09709.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> In this preprint, Nascimento and colleagues introduce "ShapedNet," a deep learning model that uses one photograph to estimate body fat percentage, identify individuals, and even localize fat distribution. Validated on the same large dataset of 1,273 adults, ShapedNet achieved a low mean absolute percentage error (~4.9%) for body fat and outperformed about 19% of prior vision-based approaches. Notably, a gender-neutral model in ShapedNet gave the best performance, estimating %BF within about 4–6% error bounds. This cutting-edge research is relevant to BodyMax AI as it represents the next generation of image-based body composition algorithms, highlighting multi-task learning and high accuracy from minimal inputs (just a single image).</p>
+</div>
+
+<div class="citation">
+    <p><strong>Tinsley, G. M., Rodriguez, C., Florez, C. M., Siedler, M. R., Tinoco, E., McCarthy, C., & Heymsfield, S. B. (2024).</strong> Smartphone three-dimensional imaging for body composition assessment using non-rigid avatar reconstruction. <em>Frontiers in Medicine, 11, 1485450.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> This study tested a consumer-friendly 3D optical scanning app that uses a smartphone to create a personalized avatar and estimate body composition. In 131 adults, they assessed body fat percentage with two different 3D avatar-based methods and compared results to DXA. The 3D scans showed excellent test–retest reliability and achieved body fat estimates within roughly ±2% of DXA values after statistical adjustment. Importantly, the full-body 3D approach allowed visualization of fat distribution via the generated avatars. For BodyMax AI, these findings confirm that smartphone cameras can capture sufficient detail (through full-body scans or multiple images) to closely approximate lab-grade body composition measures, supporting the use of user-generated imagery for accurate fat and muscle monitoring.</p>
+</div>
+
+<div class="citation">
+    <p><strong>Leong, L. T., Wong, M. C., Liu, Y. E., Glaser, Y., Quon, B. K., Kelly, N. N., Cataldi, D., Sadowski, P., Heymsfield, S. B., & Shepherd, J. A. (2024).</strong> Generative deep learning furthers the understanding of local distributions of fat and muscle on body shape and health using 3D surface scans. <em>Communications Medicine, 4(1), 13.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> Leong et al. applied generative deep learning to 3D body-surface scans to analyze how fat and muscle are regionally distributed in the body. Using advanced models, they could decompose a person's shape into detailed fat and muscle maps, providing insight beyond a single overall body fat percentage. This open-access article shows that AI can identify not just how much fat a person has, but where they carry it – a key health factor. The relevance to BodyMax AI is that as the app evolves, incorporating such deep learning techniques could enable more personalized health feedback (e.g. highlighting visceral fat vs. peripheral fat), since BodyMax's image inputs could similarly be used to infer fat distribution patterns linked to health outcomes.</p>
+</div>
+
+<div class="citation">
+    <p><strong>Mueller, M., Zhou, X., et al. (2023).</strong> Body fat estimation from surface meshes using graph neural networks. <em>Preprint posted to arXiv, arXiv:2308.02493.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> This research (yet to be formally published) explores a novel approach of predicting internal fat volumes from 3D body surface geometry using graph neural networks. The authors constructed triangulated surface meshes of human bodies (extracted from MRI scans) and trained a graph-based model to estimate volumes of visceral adipose tissue (VAT) and abdominal subcutaneous fat. The graph neural network achieved high prediction accuracy for both VAT and subcutaneous fat, while being computationally efficient. This innovative approach is relevant for BodyMax AI's future development because it suggests that with enough data, even the external shape information captured by cameras can yield accurate estimates of internal fat distribution. It points toward advanced modeling techniques that BodyMax AI could integrate to enhance its body composition predictions, particularly for health-critical fat depots like visceral fat.</p>
+</div>
+
+<h3>Category 2: Evidence-Based Strategies for Improving Body Composition</h3>
+
+<div class="citation">
+    <p><strong>Kim, J. Y. (2021).</strong> Optimal diet strategies for weight loss and weight loss maintenance. <em>Journal of Obesity & Metabolic Syndrome, 30(1), 20–31.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> This review article examines evidence-based dietary strategies for losing weight and keeping it off. It emphasizes that creating an energy (calorie) deficit is the crucial factor for weight loss – regardless of whether one chooses a low-carb, low-fat, or other diet type. Kim notes that standard low-calorie diets (reducing daily intake by 500–750 kcal) are effective, and very-low-calorie ketogenic diets can be an option in severe obesity under supervision. The paper also discusses meal timing, suggesting that consuming a larger breakfast and fasting overnight may help prevent obesity. For BodyMax AI, these findings reinforce the advice that sustained caloric deficit is key to fat loss and that no single fad diet is universally superior – the app can thus focus on personalized sustainable eating plans.</p>
+</div>
+
+<div class="citation">
+    <p><strong>Huang, J., Li, Y., Chen, M., Zheng, X., & Li, L. (2024).</strong> Comparing caloric restriction regimens for effective weight management in adults: A systematic review and network meta-analysis. <em>International Journal of Behavioral Nutrition and Physical Activity, 21, 108.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> Huang et al. conducted a comprehensive network meta-analysis comparing four popular calorie-restriction approaches: continuous daily restriction (standard dieting), alternate-day fasting, short-term intermittent fasting, and time-restricted eating. Analyzing results from dozens of randomized trials, they found that all these regimens produce significant weight loss in adults, highlighting that the primary driver is the overall calorie reduction. Alternate-day fasting (ADF) ranked slightly highest for reducing weight, BMI, waist circumference, and fat mass, while daily continuous restriction had a bit more weight regain by 4–6 months. Importantly, no method was dramatically superior long-term – meaning individuals can choose the strategy they adhere to best. This supports BodyMax AI's guidance that whether one prefers daily modest cuts or intermittent fasting, the consistent caloric deficit over time is what yields fat loss.</p>
+</div>
+
+<div class="citation">
+    <p><strong>Jayedi, A., Soltani, S., Zargar, M. S., Najafi, M., & Willett, W. C. (2024).</strong> Aerobic exercise and weight loss in adults: A systematic review and dose–response meta-analysis. <em>JAMA Network Open, 7(12), e24252185.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> This recent meta-analysis quantified how different doses of cardio exercise affect body fat and weight. Across 116 randomized trials, greater amounts of aerobic exercise (especially 150+ minutes per week of moderate-to-vigorous activity) led to progressively larger reductions in body weight, waist circumference, and body fat%. The relationship was roughly linear up to about 300 minutes/week – indicating that more cardio yields more fat loss, up to a point. Notably, at least 150 minutes/week was needed to see clinically meaningful fat reduction around the waist. These findings back the fitness advice in BodyMax AI: regular aerobic exercise (e.g. brisk walking, running, cycling) is an effective tool to accelerate fat loss and should be combined with diet changes. The app can confidently recommend the guideline of 150–300 minutes of moderate exercise per week for users aiming to decrease body fat.</p>
+</div>
+
+<div class="citation">
+    <p><strong>Johns, D. J., Hartmann-Boyce, J., Jebb, S. A., & Aveyard, P. (2014).</strong> Diet or exercise interventions vs. combined behavioral weight management programs: A systematic review and meta-analysis of direct comparisons. <em>Journal of the Academy of Nutrition and Dietetics, 114(10), 1557–1568.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> This meta-analysis looked at randomized trials to determine whether combining diet and exercise is more effective for weight loss than either strategy alone. In the short term (3–6 months), diet-only and diet+exercise programs yielded similar weight loss (~5–6 kg). By 12 months, however, the combined diet-plus-exercise programs led to about 1.7 kg more weight loss than diet alone. Moreover, combined programs vastly outperformed exercise-only programs in both short and long term (as exercise without diet gave much smaller losses). The conclusion is that while calorie control is paramount, adding exercise provides extra benefit in sustaining weight loss over time. For BodyMax AI's guidance, this evidence supports promoting a holistic approach – encouraging users to improve nutrition and physical activity together for best results in changing body composition and preventing weight regain.</p>
+</div>
+
+<div class="citation">
+    <p><strong>Lopez, P., Taaffe, D. R., Galvão, D. A., Newton, R. U., et al. (2022).</strong> Resistance training effectiveness on body composition and body weight outcomes in individuals with overweight and obesity: A systematic review and meta-analysis. <em>Obesity Reviews, 23(8), e13428.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> This rigorous meta-analysis focused on how resistance training (RT) impacts body composition in overweight or obese people. Across numerous trials, RT interventions significantly decreased total fat mass and body fat percentage while concurrently increasing lean muscle mass, even if the scale weight change was modest. In fact, the most effective strategy for reducing body fat% was RT combined with calorie restriction, yielding an average fat percentage drop of about 3.8% (vs. baseline) in the analyzed studies. A key finding is that relying on weight alone underestimates RT benefits – participants often lost fat and gained muscle, sometimes resulting in little net weight change. This evidence underpins BodyMax AI's recommendations that strength training (e.g. weight lifting or bodyweight exercises) should be included in weight-loss plans to improve body composition by preserving or increasing muscle while reducing fat, which is healthier than losing weight from muscle loss.</p>
+</div>
+
+<div class="citation">
+    <p><strong>Benito, P. J., Cupeiro, R., Ramos-Campo, D. J., Alcaraz, P. E., & Rubio-Arias, J. Á. (2020).</strong> A systematic review with meta-analysis of the effect of resistance training on whole-body muscle growth in healthy adult males. <em>International Journal of Environmental Research and Public Health, 17(4), 1285.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> Benito et al. aggregated 111 studies to quantify how much muscle mass men typically gain from resistance training. On average, structured weight training programs increased lean mass by about 1.5 kg in the study participants over the intervention periods. Interestingly, the meta-regression found that doing an extremely high number of sets per workout had diminishing returns – beyond a certain point, "excessive sets" slightly hindered muscle gains (possibly due to overtraining). No other factor (age, baseline fitness, etc.) significantly affected muscle growth outcomes, highlighting that any healthy adult male can add muscle with proper training. The relevance for BodyMax AI is clear: incorporating progressive resistance workouts is evidence-based for those looking to increase muscle mass. The app can also caution users against overtraining, reinforcing that moderate volumes (e.g. ~10–20 sets per muscle per week) are sufficient to stimulate hypertrophy, echoing the consensus that quality and consistency beat sheer quantity in strength training.</p>
+</div>
+
+<div class="citation">
+    <p><strong>Nunes, E. A., Colenso-Semple, L., McKellar, S. R., et al. (2022).</strong> Systematic review and meta-analysis of protein intake to support muscle mass and function in healthy adults. <em>Journal of Cachexia, Sarcopenia and Muscle, 13(2), 795–810.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> This extensive meta-analysis examined 74 trials to determine how increasing daily protein intake affects muscle outcomes, especially when combined with resistance exercise. The results showed that consuming more protein than the standard recommended amount leads to additional gains in lean body mass and strength in adults performing resistance training. In practical terms, protein supplementation or a higher-protein diet produced a small but significant extra muscle gain (effect size ~0.22) and better lower-body strength, particularly in studies with exercise. There was a dose-response trend up to around 1.6 grams of protein per kilogram of body weight per day, beyond which benefits plateaued. This evidence directly informs BodyMax AI's guidance on nutrition: to maximize muscle building or preservation (for instance, during a fat-loss phase), users should ensure adequate protein intake, roughly in the higher range of what is recommended, alongside their training regimen.</p>
+</div>
+
+<div class="citation">
+    <p><strong>Bernárdez-Vázquez, R., Raya-González, J., Castillo, D., & Beato, M. (2022).</strong> Resistance training variables for optimization of muscle hypertrophy: An umbrella review. <em>Frontiers in Sports and Active Living, 4, 949021.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> This umbrella review synthesized findings from 14 meta-analyses (covering 178 primary studies) on the best resistance-training practices for muscle hypertrophy. The consensus recommendations include performing at least 10 sets per muscle group per week for optimal growth, emphasizing the importance of eccentric contractions (lengthening phase of lifts), and avoiding extremely slow repetition speeds (≥10 seconds per rep) which were found counterproductive to muscle gains. Interestingly, factors like exercise order, time of day, or periodization type showed minimal direct impact on hypertrophy compared to core variables like volume and intensity. For BodyMax AI's fitness coaching, this review provides high-level evidence to back specific workout recommendations – such as weekly set targets and lifting technique pointers – thereby improving users' chances of gaining muscle effectively. It ensures the app's resistance training advice aligns with what research indicates to be optimal for muscle growth.</p>
+</div>
+
+<div class="citation">
+    <p><strong>Aragon, A. A., Schoenfeld, B. J., Wildman, R., Kleiner, S., VanDusseldorp, T., Taylor, L., … & Stout, J. R. (2017).</strong> International Society of Sports Nutrition position stand: diets and body composition. <em>Journal of the ISSN, 14(1), 16.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> In this consensus paper, sports nutrition experts review how different dietary approaches influence body composition. Key conclusions are that overall calorie intake and protein intake are the primary nutritional determinants of fat loss and muscle gain – not the specific diet style. The ISSN panel reports that high-protein diets (roughly 2.2–3.0 g/kg for active individuals) are safe and can enhance fat loss by preserving lean mass during caloric deficits. They also find that meal frequency and timing (e.g., fasting vs. frequent meals) have relatively minor effects compared to total nutrient intake, though distributing protein across the day may support muscle protein synthesis. This position stand supports BodyMax AI's evidence-based approach: the app's dietary recommendations can focus on maintaining a caloric deficit for fat loss, ensuring sufficient protein for muscle, and accommodating user preferences for eating patterns since multiple strategies can work as long as fundamentals are met.</p>
+</div>
+
+<div class="citation">
+    <p><strong>Huang, W. C., Chuang, H. L., Li, Y. S., Chen, Y. M., & Tsai, Y. J. (2019).</strong> Effect of protein supplementation combined with resistance exercise on body composition and physical function in older adults: A systematic review and meta-analysis. <em>Nutrients, 11(11), 2617.</em></p>
+    <p class="annotation"><strong>Annotation:</strong> Although focused on older adults, this meta-analysis provides insight into the synergy of resistance training and protein nutrition for body composition improvement. Across 19 studies in adults over 60, those who did strength training while taking protein supplements gained more lean mass (+0.75 kg on average) and lost more fat mass than those training without extra protein. Improvements in muscle strength and physical function (like gait speed) were also greater in the protein-supplemented groups. The findings emphasize that exercise and nutrition work hand-in-hand: resistance exercise builds strength, and ample protein supplies the building blocks for muscle tissue, especially critical in populations at risk of muscle loss. For BodyMax AI, this underscores a general principle applicable to all ages – combining progressive resistance workouts with higher protein intake yields superior changes in body composition (more muscle, less fat) than exercise alone. The app can integrate this knowledge by encouraging users to meet protein goals alongside their workout plans to maximize results.</p>
+</div>
+
+<style>
+.citation {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.citation p {
+    margin-bottom: 10px;
+}
+
+.annotation {
+    padding-left: 15px;
+    border-left: 3px solid #4CAF50;
+    margin-top: 5px;
+    color: #555;
+}
+</style>
 
         </section>
         
